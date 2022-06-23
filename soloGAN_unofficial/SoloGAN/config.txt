@@ -1,0 +1,12 @@
+training:
+conda activate env1
+cd /d F:/SoloGAN
+python train.py 
+python train.py --resume ./results/trial/00069.pth
+
+visualise loss:
+tensorboard --logdir=logs/trial
+http://localhost:6006/
+
+jupyter notebook --notebook-dir=F:/
+
